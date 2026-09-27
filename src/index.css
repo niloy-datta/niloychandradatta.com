@@ -32,7 +32,7 @@
   body {
     background-color: var(--background);
     color: var(--foreground);
-    /* Background-এ একটা subtle radial gradient দেওয়া হয়েছে যাতে plain black না লাগে */
+    
     background-image: radial-gradient(circle at top right, rgba(30, 41, 59, 0.4) 0%, transparent 40%),
                       radial-gradient(circle at bottom left, rgba(15, 23, 42, 0.8) 0%, transparent 40%);
     background-attachment: fixed;
@@ -40,7 +40,7 @@
   }
 }
 
-/* Experience timeline line animation */
+
 .is-active::before {
   animation: fillTimeline 2s ease-out forwards;
 }

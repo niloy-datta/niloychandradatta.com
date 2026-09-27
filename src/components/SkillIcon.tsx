@@ -1,5 +1,5 @@
 import React from "react";
-// বিভিন্ন icon library থেকে official tech logo-গুলো import করা হচ্ছে
+
 import {
   SiHtml5,
   SiJavascript,
@@ -36,11 +36,11 @@ interface SkillIconProps {
   size?: number;
 }
 
-// এই component-টি skill-এর নাম গ্রহণ করে এবং সেটির জন্য সঠিক Official Logo ও Brand Color প্রদান করে
+
 const SkillIcon: React.FC<SkillIconProps> = ({ name, className = "w-4 h-4", size = 18 }) => {
   const normalized = name.toLowerCase().trim();
 
-  // ১. Frontend Technologies
+  
   if (normalized.includes("html")) {
     return <SiHtml5 size={size} className={className} style={{ color: "#E34F26" }} title={name} />;
   }
@@ -63,7 +63,7 @@ const SkillIcon: React.FC<SkillIconProps> = ({ name, className = "w-4 h-4", size
     return <SiNextdotjs size={size} className={className} style={{ color: "#FFFFFF" }} title={name} />;
   }
 
-  // ২. Backend Technologies & Databases
+  
   if (normalized.includes("node")) {
     return <SiNodedotjs size={size} className={className} style={{ color: "#5FA04E" }} title={name} />;
   }
@@ -107,7 +107,7 @@ const SkillIcon: React.FC<SkillIconProps> = ({ name, className = "w-4 h-4", size
     return <SiDocker size={size} className={className} style={{ color: "#2496ED" }} title={name} />;
   }
 
-  // ৩. Tools & IDEs
+  
   if (normalized === "git") {
     return <SiGit size={size} className={className} style={{ color: "#F05032" }} title={name} />;
   }
@@ -142,7 +142,7 @@ const SkillIcon: React.FC<SkillIconProps> = ({ name, className = "w-4 h-4", size
     return <SiWebstorm size={size} className={className} style={{ color: "#00CDD7" }} title={name} />;
   }
 
-  // Default fallback icon
+  
   return <FaCode size={size} className={`text-slate-400 ${className}`} title={name} />;
 };
 

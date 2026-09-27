@@ -1,15 +1,15 @@
-// এই file-এ website-এর সব editable information এক জায়গায় রাখা হয়েছে।
-// ফলে নাম, skill, project বা experience change করতে component-এর design code edit করতে হবে না।
+
+
 
 export const portfolio = {
-  // Website-এর বিভিন্ন জায়গায় আমার নাম দেখানোর জন্য
+  
   name: "Niloy Chandra Datta",
 
-  // Hero section-এ আমার current role আর এক লাইনের intro
+  
   role: "Aspiring Software Engineer",
   tagline: "I build fast, scalable, and responsive web applications.",
 
-  // Social links - Navbar বা Footer-এ click করলে এই link-গুলোতে যাবে
+  
   socials: {
     github: "https://github.com/niloy-datta",
     linkedin: "https://www.linkedin.com/in/niloy-d-9897473a8/",
@@ -18,10 +18,10 @@ export const portfolio = {
     mapsUrl: "https://maps.app.goo.gl/NUU8nJGRc6JVbMVS9"
   },
 
-  // About section-এর detail text
-  about: "I’m a third-year Computer Science student, currently in the final semester of my third year, with a strong passion for software engineering, web development, and building meaningful digital products. I enjoy solving challenging problems, designing scalable solutions, and transforming ideas into clean, efficient, and user-focused applications. I’m continuously exploring modern technologies, AI, and emerging software trends to strengthen my skills and build impactful solutions. My goal is to create reliable, scalable, and intuitive software that combines strong engineering with an excellent user experience.",
+  
+  about: "I’m a third-year Computer Science student, currently in the final semester of my third year, with a strong passion for software engineering, web development, and building meaningful digital products. I enjoy solving challenging problems, designing scalable solutions, and transforming ideas into clean, efficient, and user-focused applications. I’m continuously exploring modern technologies and emerging software trends to strengthen my skills and build impactful solutions. My goal is to create reliable, scalable, and intuitive software that combines strong engineering with an excellent user experience.",
 
-  // Skills - category অনুযায়ী ভাগ করা। UI-তে এগুলো আলাদা আলাদা block হিসেবে দেখাবে।
+  
   skills: {
     languages: ["C", "C++", "Python", "Java"],
     frontend: ["HTML5", "CSS3", "JavaScript", "React.js", "Tailwind CSS"],
@@ -29,7 +29,7 @@ export const portfolio = {
     tools: ["IntelliJ IDEA", "WebStorm", "Android Studio", "GitHub", "Canva"]
   },
 
-  // Projects - object-এর array. Map করে project card বানানো হবে।
+  
   projects: [
     {
       title: "Job Search Site",
@@ -82,7 +82,7 @@ export const portfolio = {
     }
   ],
 
-  // Experience বা Education history
+  
   experience: [
     {
       role: "Business Development",
@@ -125,17 +125,17 @@ export const portfolio = {
     }
   ],
 
-  // Current focus area - Currently learning, focus, research interest
+  
   currentFocus: {
     title: "Currently Focusing On",
-    description: "Currently learning Artificial Intelligence, Machine Learning, and Distributed Systems, with a focus on understanding intelligent technologies, scalable architectures, and real-world software systems."
+    description: "Currently studying distributed systems and scalable software development, with a focus on reliable architectures and real-world software systems."
   },
   
   currentlyLearning: [
-    "Artificial Intelligence",
-    "Machine Learning",
-    "Distributed Systems"
+    "Distributed Systems",
+    "Software Architecture",
+    "Web Performance"
   ],
 
-  researchInterest: "Human-Computer Interaction (HCI) and the impact of AI-driven UI design on user productivity."
+  researchInterest: "Human-Computer Interaction (HCI) and the impact of user-centered interface design on productivity."
 };

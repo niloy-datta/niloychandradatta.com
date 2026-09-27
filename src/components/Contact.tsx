@@ -20,13 +20,13 @@ const Contact: React.FC = () => {
 
   return (
     <section id="contact" className="py-20 bg-slate-950/70 border-t border-slate-800/60 relative overflow-hidden">
-      {/* Background ambient lighting */}
+      
       <div className="absolute top-1/3 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-cyan-600/10 rounded-full blur-[140px] pointer-events-none"></div>
       <div className="absolute bottom-10 right-1/4 w-[400px] h-[400px] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
 
       <div className="container mx-auto px-6 md:px-12 max-w-6xl relative z-10">
         
-        {/* Section Heading */}
+        
         <div className="text-center md:text-left mb-12">
           <p className="text-cyan-400 text-xs font-bold tracking-widest uppercase mb-1">
             08 | CONTACT
@@ -39,12 +39,12 @@ const Contact: React.FC = () => {
           </p>
         </div>
 
-        {/* Main Grid: Form & Map */}
+        
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch mb-8">
           
-          {/* Left Card: Send a message Form */}
+          
           <div className="bg-slate-900/80 backdrop-blur-xl border border-cyan-500/30 rounded-3xl p-7 md:p-9 shadow-2xl flex flex-col justify-between relative overflow-hidden group">
-            {/* Subtle glow border hover */}
+            
             <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/5 via-transparent to-blue-500/5 pointer-events-none"></div>
 
             <div>
@@ -109,10 +109,10 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
-          {/* Right Card: Google Map / Sylhet Base */}
+          
           <div className="bg-slate-900/80 backdrop-blur-xl border border-slate-800 rounded-3xl overflow-hidden shadow-2xl relative min-h-[420px] flex flex-col">
             
-            {/* Top-left Sylhet Base badge */}
+            
             <div className="absolute top-4 left-4 z-20 bg-slate-950/90 backdrop-blur-md border border-slate-800 rounded-2xl p-3.5 shadow-2xl max-w-[260px]">
               <div className="flex items-center justify-between gap-3">
                 <div className="flex items-center gap-2">
@@ -137,7 +137,7 @@ const Contact: React.FC = () => {
               </p>
             </div>
 
-            {/* Stylized Dark Map Embed */}
+            
             <div className="w-full h-full relative overflow-hidden flex-1 min-h-[380px]">
               <iframe
                 title="Sylhet Base Location"
@@ -147,7 +147,7 @@ const Contact: React.FC = () => {
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
 
-              {/* Pulsing Pin Overlay */}
+              
               <div className="absolute top-[52%] left-[50%] -translate-x-1/2 -translate-y-1/2 z-10 pointer-events-none flex flex-col items-center">
                 <div className="relative flex items-center justify-center">
                   <span className="w-6 h-6 rounded-full bg-cyan-400/40 animate-ping absolute"></span>
@@ -163,10 +163,10 @@ const Contact: React.FC = () => {
 
         </div>
 
-        {/* Bottom Information Cards */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
           
-          {/* Email Badge */}
+          
           <a
             href={`mailto:${portfolio.socials.email}`}
             className="flex items-center gap-3.5 bg-slate-900/80 hover:bg-slate-850 border border-slate-800 hover:border-slate-700 px-5 py-4 rounded-2xl transition-all duration-200 group"
@@ -182,7 +182,7 @@ const Contact: React.FC = () => {
             </div>
           </a>
 
-          {/* Location Badge */}
+          
           <a
             href="https://maps.app.goo.gl/NUU8nJGRc6JVbMVS9"
             target="_blank"
@@ -200,7 +200,7 @@ const Contact: React.FC = () => {
             </div>
           </a>
 
-          {/* GitHub Badge */}
+          
           <a
             href={portfolio.socials.github}
             target="_blank"
@@ -218,7 +218,7 @@ const Contact: React.FC = () => {
             </div>
           </a>
 
-          {/* LinkedIn Badge */}
+          
           <a
             href={portfolio.socials.linkedin}
             target="_blank"

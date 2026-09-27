@@ -1,28 +1,28 @@
 import React from "react";
-// Data file import করা হচ্ছে যাতে dynamic data দেখানো যায়
+
 import { portfolio } from "../data/portfolio";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa6";
 
-// Hero Component: এটা website-এর সবচেয়ে প্রথম অংশ। 
-// এখানে আমার ছবি, নাম আর short introduction থাকবে।
+
+
 const Hero: React.FC = () => {
   return (
-    // Section-টা পুরো screen (min-h-screen) নিবে, content মাঝখানে থাকবে (flex, justify-center, items-center)
+    
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20">
       
-      {/* Container-এর width limit করা এবং responsive design-এর জন্য flex-col (mobile) ও md:flex-row (desktop) ব্যবহার করা হয়েছে */}
+      
       <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center gap-12">
         
-        {/* Left Side: Text Content */}
+        
         <div className="flex-1 text-center md:text-left">
           <p className="text-blue-500 font-medium tracking-wider mb-2">CSE STUDENT · JAVA BACKEND FOCUS</p>
           
-          {/* নামটা অনেক বড় (text-5xl), bold এবং gradient color-এর হবে */}
+          
           <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-slate-100 to-slate-400">
             {portfolio.name}
           </h1>
           
-          {/* role এবং tagline */}
+          
           <h2 className="text-2xl md:text-3xl font-semibold text-blue-400 mb-6">
             {portfolio.role}
           </h2>
@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
             {portfolio.tagline}
           </p>
           
-          {/* Call to Action Button */}
+          
           <div className="flex flex-wrap justify-center md:justify-start gap-4">
             <a 
               href="#projects" 
@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
             </a>
           </div>
 
-          {/* Social quick links below CTA buttons */}
+          
           <div className="flex items-center justify-center md:justify-start gap-6 mt-8 pt-2">
             <a
               href={portfolio.socials.github}
@@ -76,14 +76,14 @@ const Hero: React.FC = () => {
           </div>
         </div>
         
-        {/* Right Side: Portrait Image */}
+        
         <div className="flex-1 flex justify-center mt-12 md:mt-0 relative group">
-          {/* Image-এর পিছনে একটা glow effect (gradient blob) দেওয়া হয়েছে */}
+          
           <div className="absolute inset-4 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full blur-2xl group-hover:blur-xl transition-all duration-500"></div>
           
-          {/* Image Container: border-radius, shadow, hover effect */}
+          
           <div className="relative w-72 h-72 md:w-96 md:h-96 rounded-[2rem] overflow-hidden border border-slate-800 shadow-2xl shadow-blue-900/20 rotate-3 group-hover:rotate-0 transition-transform duration-500">
-            {/* public/profile.jpg file browser-এ দেখানো হচ্ছে */}
+            
             <img 
               src={`${import.meta.env.BASE_URL}profile.jpg`} 
               alt={portfolio.name} 
